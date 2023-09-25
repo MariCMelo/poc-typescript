@@ -1,8 +1,3 @@
-export type Specie = {
-  id: number;
-  specie: string;
-  phylum: string;
-  kingdom: string;
-};
+import { Species } from "@prisma/client";
 
-export type CreateSpecie = Omit<Specie, "id">;
+export type CreateSpecie = Omit<Species, "id">;
